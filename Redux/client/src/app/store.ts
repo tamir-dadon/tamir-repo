@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import TextReducer from '../features/Text/textSlice';
+import JokeReducer from '../features/Joke/JokeSlice'
 
 export const store = configureStore({
   reducer: {
-    text:TextReducer
+    text:TextReducer,
+    Joke:JokeReducer
   },
 });
 
